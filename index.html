@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Jueguito</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SOLO UN 0.000001% PUDO GANAR ESTE JUEGO</h1>
+        <div class="row">
+            <div class="col-sm-6 border border-primary player-one">
+                <div class="row justify-content-center">
+                    <h2 class="">Jugador 1</h2>
+                </div>
+                <div class="progress m-3" style="height: 25px;">
+                    <div id="progres-bar-one" class="progress-bar" role="progressbar" style="width: 100%;"
+                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+                </div>
+                <div class="row  justify-content-center m-2">
+                    <button id="normal-atack" onclick="normalAttack('two')" type="button" class="btn btn-danger">Atacar</button>
+                </div>
+                <div class="row  justify-content-center m-2">
+                    <button id="super-atack" type="button" onclick="superAttack('two')" class="btn btn-primary">Super ataque</button>
+                </div>
+                <div class="row  justify-content-center m-2">
+                    <button id="heal-atack"  onclick="healAttack('one')" type="button" class="btn btn-success">Curar</button>
+                </div>
+            </div>
+            <div class="col-sm-6 border border-primary player-two">
+                <div class="row justify-content-center">
+                    <h2 class="">Jugador 2</h2>
+                </div>
+                <div class="progress m-3" style="height: 25px;">
+                    <div id="progres-bar-two" class="progress-bar" role="progressbar" style="width: 100%;"
+                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+                </div>
+                <div class="row  justify-content-center m-2">
+                    <button id="normal-atack" onclick="normalAttack('one')" type="button" class="btn btn-danger">Atacar</button>
+                </div>
+                <div class="row  justify-content-center m-2">
+                    <button id="super-atack" type="button" onclick="superAttack('one')" class="btn btn-primary">Super ataque</button>
+                </div>
+                <div class="row  justify-content-center m-2">
+                    <button id="heal-atack" type="button" onclick="healAttack('two')" class="btn btn-success">Curar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
